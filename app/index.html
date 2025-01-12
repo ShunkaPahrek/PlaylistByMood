@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Playlist Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Playlist Manager</h1>
+</header>
+
+<!-- mood buttons-->
+<section id="mood-buttons-section">
+  <h2>Select a Mood</h2>
+  <div id="mood-buttons-container">
+  </div>
+  <div id="api-status"></div>
+  <ul id="search-results"></ul>
+</section>
+
+<!-- Create Playlist -->
+<section id="create-playlist-section">
+  <h2>Create a New Playlist</h2>
+  <input id="new-playlist-name" type="text" placeholder="My Awesome Playlist" />
+  <button id="create-playlist-button">Create Playlist</button>
+</section>
+
+<!--   -->
+<section id="playlists-section">
+  <h2>My Playlists (stored in your browser)</h2>
+  <div id="my-playlists"></div>
+</section>
+
+<!-- obnovit relaci button -->
+<button id="clear-session-button" class="spotify-button">Clear Session Storage</button>
+
+<!-- Script nakonec dom jiz je -->
+<script src="script.js"></script>
+</body>
+</html>

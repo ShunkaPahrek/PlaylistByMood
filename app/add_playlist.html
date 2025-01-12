@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add to Playlist</title>
+    <link rel="stylesheet" href="add_playlist.css">
+</head>
+<body>
+<header>
+    <h1>Add Track to Playlist</h1>
+</header>
+
+<main>
+    <div id="track-info">
+        <h2>Track Details</h2>
+        <p><strong>Title:</strong> <span id="track-title"></span></p>
+        <p><strong>Artist:</strong> <span id="track-artist"></span></p>
+        <p><strong>Description:</strong> <span id="track-description"></span></p>
+    </div>
+
+    <div id="playlist-selection">
+        <h3>Select a Playlist:</h3>
+        <form id="playlist-form">
+            <select id="playlist-select" required>
+                <option value="" disabled selected>Select a Playlist</option>
+                <!-- Playlists will be populated here -->
+            </select>
+            <div class="buttons">
+                <button type="submit">Done</button>
+                <button type="button" id="cancel-button">Cancel</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<script src="add_playlist.js"></script>
+</body>
+</html>
